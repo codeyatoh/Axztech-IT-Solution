@@ -1,29 +1,35 @@
 .container {
   font-family: 'Poppins', 'Inter', sans-serif;
-  background: #fcfcfc;
-  min-height: 40vh;
+  /* background: #fcfcfc; */
+  min-height: 0;
   max-width: 1400px;
-  margin: 2.5rem auto;
-  padding: 3rem 1rem;
-  overflow-x: auto;
+  margin: 0.2rem auto;
+  padding: 0.2rem 0.2rem;
+  overflow-x: hidden;
   box-sizing: border-box;
+  scrollbar-width: none;
+}
+.container::-webkit-scrollbar {
+  display: none;
 }
 
 .formCard {
   background-color: #EAEFEF;
   border-radius: 10px;
-  box-shadow: 0 8px 30px rgba(51, 52, 70, 0.1);
+  box-shadow: none;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 0.2rem;
   box-sizing: border-box;
+  padding: 0.7rem;
 }
 @media (min-width: 768px) {
   .formCard {
     flex-direction: row;
-    min-height: 600px;
-    gap: 2rem;
+    min-height: 200px;
+    gap: 0.2rem;
+    padding: 0.7rem;
   }
   .sidebar {
     width: 40%;
@@ -32,10 +38,10 @@
 .sidebar {
   background-color: #333446;
   color: #EAEFEF;
-  padding: 2rem;
+  padding: 0.5rem;
 }
 .formContent {
-  padding: 2rem;
+  padding: 0.5rem;
   flex: 1;
 }
 @media (max-width: 600px) {
@@ -60,8 +66,8 @@
   }
 }
 .title {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
   /* color: #333446; */
   font-weight: 600;
   background: linear-gradient(90deg, #1e40af, #3b82f6);
@@ -71,45 +77,45 @@
 }
 .subtitle {
   color: #7F8CAA;
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
 }
 .contactInfo {
   margin-top: 2rem;
 }
 .contactTitle {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
   color: #B8CFCE;
   font-weight: 500;
   position: relative;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
 }
 .contactTitle::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 50px;
+  width: 30px;
   height: 2px;
   background-color: #B8CFCE;
 }
 .infoItem {
   display: flex;
   align-items: center; /* changed from flex-start to center for vertical alignment */
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.7rem;
 }
 .infoIcon {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   background-color: rgba(184, 207, 206, 0.2);
-  padding: 10px;
+  padding: 6px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 44px;
-  width: 44px;
+  height: 28px;
+  width: 28px;
 }
 .infoText {
   display: flex;
@@ -118,20 +124,22 @@
 }
 .infoText h3 {
   font-weight: 500;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.1rem;
   color: #B8CFCE;
+  font-size: 0.95rem;
 }
 .infoText p {
   color: #EAEFEF;
   opacity: 0.8;
+  font-size: 0.9rem;
 }
 .formGroup {
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.6rem;
 }
 .formRow {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 0.6rem;
 }
 @media (min-width: 768px) {
   .formRow {
@@ -144,20 +152,21 @@
 }
 .label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   color: #333446;
   font-weight: 500;
+  font-size: 0.95rem;
 }
 .input, .select, .textarea {
   width: 100%;
-  padding: 0.9rem 1rem;
+  padding: 0.5rem 0.7rem;
   border: 2px solid #B8CFCE;
   border-radius: 5px;
   background-color: white;
   color: #333446;
   transition: border-color 0.2s;
-  font-size: 1rem;
-  min-height: 44px;
+  font-size: 0.95rem;
+  min-height: 32px;
   box-sizing: border-box;
 }
 .input:focus, .select:focus, .textarea:focus {
@@ -165,9 +174,9 @@
   border-color: #7F8CAA;
 }
 .textarea {
-  min-height: 120px;
+  min-height: 60px;
   resize: vertical;
-  padding: 1rem;
+  padding: 0.7rem;
 }
 .checkboxContainer {
   display: flex;
@@ -180,9 +189,9 @@
   color: #7F8CAA;
 }
 .privacyText {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: #7F8CAA;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .privacyLink {
   color: #333446;
@@ -192,21 +201,23 @@
   background-color: #333446;
   color: #EAEFEF;
   border: none;
-  padding: 1rem 2rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 5px;
   font-weight: 500;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   transition: background-color 0.2s;
+  font-size: 0.95rem;
 }
 .button:hover {
   background-color: #7F8CAA;
 }
 .buttonIcon {
-  margin-right: 0.5rem;
+  margin-right: 0.3rem;
 }
 .required {
   color: #7F8CAA;
-  margin-left: 4px;
+  margin-left: 2px;
+  font-size: 0.95em;
 }

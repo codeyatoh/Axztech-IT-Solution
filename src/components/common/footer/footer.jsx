@@ -8,7 +8,7 @@ import {
   FaLinkedin 
 } from 'react-icons/fa';
 import styles from './Footer.module.css';
-import logoImg from '../../assets/images/axztech-logo.png';
+import logoImg from '../../../assets/images/axztech-logo.png';
 import { Link } from 'react-router-dom';
 function Footer() {
   return (

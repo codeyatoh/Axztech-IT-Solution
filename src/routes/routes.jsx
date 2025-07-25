@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from '../pages/home/home';
-import Contact from '../pages/contact/contact';
-import Products from '../pages/products/products';
-import AboutUs from '../pages/aboutUs/aboutUs';
+import Home from '../components/pages/home/home';
+import Contact from '../components/pages/contact/contact';
+import Products from '../components/pages/products/products';
+import AboutUs from '../components/pages/aboutUs/aboutUs';
 
 function AppRoutes({ location }) {
   return (

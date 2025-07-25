@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import styles from './Team.module.css'
-import rioImg from '../../../assets/images/Rio-Al-Di-Dompol.jpg';
+import rioImg from '../../../../assets/images/Rio-Al-Di-Dompol.jpg';
 const fadeInUp = {
   initial: { opacity: 0, y: 40 },
   whileInView: { opacity: 1, y: 0 },

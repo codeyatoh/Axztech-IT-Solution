@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
-import logoImg from '../../assets/images/axztech-logo.png';
+import logoImg from '../../../assets/images/axztech-logo.png';
 import FeaturesSection from './KeyFeatureCards/KeyFeatureCards';
 import PricingSelection from './PricingSelection/PricingSelection';
 import CustomSolution from './CustomSolution/CustomSolution';

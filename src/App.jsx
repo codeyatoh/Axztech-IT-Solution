@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './common/header/header'
-import Footer from './common/footer/footer'
+import Header from './components/common/header/header'
+import Footer from './components/common/footer/footer'
 import { useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import AppRoutes from './routes/routes';
